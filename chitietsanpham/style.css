@@ -1,0 +1,165 @@
+#can_footer {
+  background-color: rgb(241, 226, 207);
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.discount-badge,
+.new-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff5a5a;
+  color: #fff;
+  padding: 5px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.new-badge {
+  background-color: #00b894;
+  right: 10px;
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 15px;
+  text-align: left;
+}
+
+.product-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.product-desc {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+
+.product-price {
+  color: #333;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.old-price {
+  color: #999;
+  text-decoration: line-through;
+}
+
+.hover-card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-card:hover .overlay {
+  opacity: 1;
+}
+
+.add-to-cart {
+  background: #fff;
+  color: #ebee5a;
+  padding: 8px 16px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  font-size: 0.9rem;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header .nav {
+  display: flex;
+  gap: 20px;
+}
+
+.header .nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.main-content .left,
+.main-content .right {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+}
+.footer {
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+  color: #777;
+  border-top: 1px solid #ddd;
+}
